@@ -1,0 +1,84 @@
+{
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild",
+    "com.sap.webide.hybrid.cordova"
+  ],
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "buildRequired": false,
+    "lastBuildDateTime": "Sun, 24 Sep 2017 16:00:18 GMT"
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationProjectCommon",
+      "templateVersion": "1.32.0",
+      "dateTimeStamp": "Sun, 24 Sep 2017 06:29:27 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationProject",
+      "templateVersion": "1.40.12",
+      "dateTimeStamp": "Sun, 24 Sep 2017 06:29:30 GMT"
+    },
+    {
+      "templateId": "servicecatalog.connectivityComponent",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Sun, 24 Sep 2017 07:06:38 GMT"
+    }
+  ],
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "hybrid": {
+    "hatVersion": "1.28.0",
+    "appNamespace": "AnalyticalApplication",
+    "backendDestination": "Northwind",
+    "oDataConfigs": [
+      {
+        "hybridOdata": {
+          "name": "OData.svc",
+          "serviceUrl": ""
+        },
+        "originOdata": {
+          "name": "OData.svc",
+          "serviceUrl": "/northwind/V2/OData/OData.svc/"
+        }
+      }
+    ],
+    "FacadeConfig": {
+      "cordova-plugin-device-orientation": false,
+      "accelerometer": {},
+      "compass": {},
+      "bFacade": false
+    }
+  },
+  "mockpreview": {
+    "mockUri": "/northwind/V2/OData/OData.svc",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "hcpdeploy": {
+    "account": "p1941794243trial",
+    "name": "analyticalapplication",
+    "lastVersionWeTriedToDeploy": "1.0.0"
+  }
+}
